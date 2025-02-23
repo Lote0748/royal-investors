@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="investment.html">Investment Plans</a>
+            <a href="chat.html">Investor Chat</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login to Your Account</h2>
+        <input type="text" id="loginUsername" placeholder="Enter Username" required>
+        <input type="password" id="loginPassword" placeholder="Enter Password" required>
+        <button onclick="login()">Login</button>
+        
+        <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+        <h3 id="loginMessage"></h3>
+    </main>
+
+    <footer>
+        <p>© 2025 Royal Investors. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

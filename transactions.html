@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit & Withdrawal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Deposit & Withdrawal</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Deposit Money</h2>
+        <input type="number" id="depositAmount" placeholder="Enter Amount">
+        <button onclick="deposit()">Deposit</button>
+
+        <h2>Withdraw Money</h2>
+        <input type="number" id="withdrawAmount" placeholder="Enter Amount">
+        <button onclick="withdraw()">Withdraw</button>
+
+        <h3>Transaction History</h3>
+        <ul id="transactionHistory"></ul>
+    </main>
+
+    <footer>
+        <p>© 2025 Royal Investors. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<h2>Withdraw Money</h2>
+<input type="number" id="withdrawAmount" placeholder="Enter Amount">
+<button onclick="requestWithdrawal()">Request Withdrawal</button>
+<ul id="withdrawalRequests"></ul>
+<h2>Withdraw Referral Earnings</h2>
+<input type="number" id="referralWithdrawAmount" placeholder="Enter Amount">
+<button onclick="withdrawReferralEarnings()">Withdraw</button>
